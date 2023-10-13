@@ -14,9 +14,15 @@
  * console.log(numbers); // [5]
  */
 function returnNumbers(start, finish) {
-
+    if (start > finish) {
+        return []
+    }
+    let numbersInArray = []
+    for (let i = start; i <= finish; i++) {
+        numbersInArray.push(i)
+    }
+    return numbersInArray
 }
-
 
 /**
  * This function sums up all the values in an array.
@@ -45,5 +51,5 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-    
+
 }
